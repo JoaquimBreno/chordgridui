@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Articulat CF Bold';
+  src: url('Fontspring-DEMO-articulatcf-bold-BF64a38d89ce81e.otf') format('opentype');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Articulat CF Bold', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom right, #070707, #001327); 
+}
+
+#chordContainer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3); /* Cor preta com transparência */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  height: 50px; /* Altura fixa */
+  width: 400px;
+}
+
+#chord h1 {
+  margin: 10px;
+  color: white; /* Cor do texto */
+  text-align: center; /* Centralizar texto */
+}
+
+#chordContainer button {
+  margin: 10px; /* Espaçamento entre botões */
+  display: inline-block; /* ou display: flex; */
+}
+
+#chord canvas {
+  transform: translateX(32px);
+}
+
+/* Estilizando o botão de input */
+
+#uploadContainer {
+  position: relative; /* Garante que o filho absoluto (o botão de upload) respeite o container */
+  align-items: center;
+  display: flex; /* Para que o container ocupe apenas a largura necessária */
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0.05px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  justify-content: center;
+}
+
+#uploadButton {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#uploadButton i {
+  margin-right: 5px; /* Espaçamento entre o texto e o ícone */
+  cursor: pointer;
+}
+
+#uploadContainer.drag-over {
+  border-color: #00ff00; /* Cor da borda quando o mouse está sobre o botão */
+  background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo quando o mouse está sobre o botão */
+}
+
+/* Estilizando os botões de anterior e próximo */
+#previous,
+#next {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#chord-bullet{
+  cursor: pointer;
+}
+
+#navigator{
+  color: white;
+}
+
+#navigator i{
+  margin: 5px;
+}
